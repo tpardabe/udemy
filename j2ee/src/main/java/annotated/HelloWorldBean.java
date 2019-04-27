@@ -1,10 +1,9 @@
-package rs;
-import javax.ejb.Remote;
+package annotated;
+
 import javax.ejb.Stateless;
 
 @Stateless
-@Remote
-public class HelloWorldBean implements HelloWorld {
+public class HelloWorldBean {
     public String sayHello() {
         return "Hello World Bean";
     }

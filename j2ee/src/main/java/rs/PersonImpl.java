@@ -1,18 +1,13 @@
 package rs;
 
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
+import annotated.HelloWorldBean;
 import javax.inject.Inject;
-import javax.inject.Named;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
-@Stateless
 @Path("/hello")
-@Named
-//it must be either Servlet, Bean, or WebService
 public class PersonImpl implements Person {
 
     @Inject
